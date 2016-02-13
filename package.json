@@ -1,0 +1,23 @@
+{
+  "name": "get_weather",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanbo1/get_weather.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanbo1/get_weather/issues"
+  },
+  "homepage": "https://github.com/sanbo1/get_weather#readme",
+  "dependencies": {
+    "onoff": "^1.0.4",
+    "xml2js": "^0.4.16"
+  }
+}
