@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/sanbo1/get_weather#readme",
   "dependencies": {
+    "cron": "^1.1.0",
+    "forever": "^0.15.1",
     "onoff": "^1.0.4",
+    "time": "^0.11.4",
     "xml2js": "^0.4.16"
   }
 }
