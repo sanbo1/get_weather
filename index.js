@@ -6,7 +6,8 @@ var Get = require('./my_modules/get_weather.js');
 var Set = require('./my_modules/set_weather.js');
 
 // cron 実行時間
-var cronTime = "0 0 */6 * * *";		// 6時間毎
+//var cronTime = "0 0 */6 * * *";		// 6時間毎
+var cronTime = "0 0 * * * *";		// 毎時00分
 //var cronTime = "*/10 * * * * *";		// 10秒毎
 
 var updateWeather = function() {
