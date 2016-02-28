@@ -79,7 +79,7 @@ module.exports.setAllLED = function(weather) {
 
 module.exports.setToday = function(weather) {
 	for (var key in weather) {
-		//console.log(weather[key].hour + ": " + weather[key].rainfallchance);
+		console.log(weather[key].hour + ": " + weather[key].rainfallchance);
 
 		if (weather[key].rainfallchance == 0) {
 			today_green[weather[key].hour] = 0;
@@ -90,12 +90,12 @@ module.exports.setToday = function(weather) {
 			today_yello[weather[key].hour] = 0;
 			today_red[weather[key].hour] = 0;
 		} else if (40 <= weather[key].rainfallchance && weather[key].rainfallchance < 80) {
-			today_green[weather[key].hour] = 1;
+			today_green[weather[key].hour] = 0;
 			today_yello[weather[key].hour] = 1;
 			today_red[weather[key].hour] = 0;
 		} else if (80 <= weather[key].rainfallchance && weather[key].rainfallchance < 100) {
-			today_green[weather[key].hour] = 1;
-			today_yello[weather[key].hour] = 1;
+			today_green[weather[key].hour] = 0;
+			today_yello[weather[key].hour] = 0;
 			today_red[weather[key].hour] = 1;
 		}
 	}
@@ -103,7 +103,7 @@ module.exports.setToday = function(weather) {
 
 module.exports.setTommorow = function(weather) {
 	for (var key in weather) {
-		//console.log(weather[key].hour + ": " + weather[key].rainfallchance);
+		console.log(weather[key].hour + ": " + weather[key].rainfallchance);
 
 		if (weather[key].rainfallchance == 0) {
 			tommorow_green[weather[key].hour] = 0;
@@ -114,12 +114,12 @@ module.exports.setTommorow = function(weather) {
 			tommorow_yello[weather[key].hour] = 0;
 			tommorow_red[weather[key].hour] = 0;
 		} else if (40 <= weather[key].rainfallchance && weather[key].rainfallchance < 80) {
-			tommorow_green[weather[key].hour] = 1;
+			tommorow_green[weather[key].hour] = 0;
 			tommorow_yello[weather[key].hour] = 1;
 			tommorow_red[weather[key].hour] = 0;
 		} else if (80 <= weather[key].rainfallchance && weather[key].rainfallchance < 100) {
-			tommorow_green[weather[key].hour] = 1;
-			tommorow_yello[weather[key].hour] = 1;
+			tommorow_green[weather[key].hour] = 0;
+			tommorow_yello[weather[key].hour] = 0;
 			tommorow_red[weather[key].hour] = 1;
 		}
 	}
